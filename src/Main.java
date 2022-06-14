@@ -90,7 +90,7 @@ public class Main {
                     System.out.println("Мы готовы выдать вам кредитную карту с лимитом " + credit + " рублей");}}
                 //седьмая задача
                 int vozrast = 25;
-                int zarplata = 90_000;
+                int zarplata = 60_000;
                 int wantedSum = 330_000;
                 int srok = 12;
                 double stavka = 10;
