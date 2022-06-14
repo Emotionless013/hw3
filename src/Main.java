@@ -64,9 +64,51 @@ public class Main {
                 System.out.println("на дворе осень");
                 break;
             default:
-                System.out.println("Такого месяца не существует");
-        }
+                System.out.println("Такого месяца не существует");}
+                //шестая задача
+                int age = 19;
+                int salary = 58_000;
+                if (age<23){
+                    if (salary<50_000) {
+                        double credit = salary*2;
+                        System.out.println("Мы готовы выдать вам кредитную карту с лимитом " + credit + " рублей");}
+                    if ((salary>=50_000)&&(salary<80_000)) {
+                        double credit= salary*2*1.2;
+                        System.out.println("Мы готовы выдать вам кредитную карту с лимитом " + credit + " рублей");}
+                    if (salary>=80_000) {
+                        double credit = salary*2*1.5;
+                        System.out.println("Мы готовы выдать вам кредитную карту с лимитом " + credit + " рублей");}}
+                else {
+                    if (salary<50_000) {
+                        double credit = salary*3;
+                        System.out.println("Мы готовы выдать вам кредитную карту с лимитом " + credit + " рублей");}
+                    if ((salary>=50_000)&&(salary<80_000)) {
+                        double credit= salary*3*1.2;
+                        System.out.println("Мы готовы выдать вам кредитную карту с лимитом " + credit + " рублей");}
+                    if (salary>=80_000) {
+                        double credit = salary*3*1.5;
+                    System.out.println("Мы готовы выдать вам кредитную карту с лимитом " + credit + " рублей");}}
+                //седьмая задача
+                int vozrast = 25;
+                int zarplata = 90_000;
+                int wantedSum = 330_000;
+                int srok = 12;
+                double stavka = 10;
+                if (vozrast<23) {
+                    stavka = stavka +1;}
+                else if (vozrast<30) {
+                    stavka = stavka +0.7;}
+                if (zarplata>80_000) {
+                    stavka = stavka - 0.7;}
+                double stavkaMesyac = stavka/100/12;
+                double platezh = wantedSum*(stavkaMesyac + stavkaMesyac/(Math.pow(1+stavkaMesyac,srok)-1));
+                double platezhMax = zarplata*0.5;
+                if (platezhMax>platezh) {
+        System.out.println("Максимальный платеж при ЗП " + zarplata + " равен " + platezhMax + " рублей. Платеж по кредиту " + platezh + " рублей. Одобрено.");}
+                else {
+                    System.out.println("Максимальный платеж при ЗП " + zarplata + " равен " + platezhMax + " рублей. Платеж по кредиту " + platezh + " рублей. Отказано.");}
+                }
     }
-}
+
 
 
